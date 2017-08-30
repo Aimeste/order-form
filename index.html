@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <title></title>
+  <style>
+    body { background: #3d9ce5;
+    background: -moz-radial-gradient(center, ellipse cover, #3d9ce5 0%, #1e5799 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #3d9ce5 0%,#1e5799 100%);
+    background: radial-gradient(ellipse at center, #3d9ce5 0%,#1e5799 100%);}
+    h1 {color:white;}
+    .form-group-mini { width: 50%; float: left; padding: 0 10px; }
+    .form-group-mini:first-child { padding-left: 0; }
+    .form-group-mini:last-child { padding-right: 0; }
+    .input-group-addon { min-width: 150px; }
+    .fa-check{color:darkseagreen !important;}
+    .fa-times{color:red !important;}
+  </style>
+</head>
+<body>
+
+  <nav class='navbar navbar-default'>
+    <div class='container'>
+      <div class="navbar-header">
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+      <div class='page-header'>
+        <h1>Order now <i class="fa fa-credit-card" aria-hidden="true"></i></h1>
+      </div>
+
+      <div class='panel'>
+        <div class='panel-body'>
+          <form>
+            <div class='form-group'>
+              <label>Credit card number:</label>
+              <div class='input-group'>
+                <input type="number" class='form-control' id='card'>
+                <div class='input-group-addon' id='type'></div>
+                <div class="input-group-addon" id="valid"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Name on card:</label>
+              <input type="text" class='form-control'>
+            </div>
+            <div class='clearfix'>
+              <div class="form-group form-group-mini">
+                <label>Expiry date:</label>
+                <input type='date' class='form-control'>
+              </div>
+              <div class="form-group form-group-mini">
+                <label>CVV:</label>
+                <input type='number' class='form-control'>
+              </div>
+            </div>
+            <br>
+            <p>
+              <button class='btn btn-primary'>Submit</button>
+            </p>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery.creditCardValidator.js"></script>
+<script type="text/javascript" src="js/anim.js"></script>
+  
+</body>
+</html>
